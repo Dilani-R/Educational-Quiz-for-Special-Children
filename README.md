@@ -1,7 +1,7 @@
-import datetime
+       import datetime
 
-class EducationalQuiz:
-    def __init__(self):
+       class EducationalQuiz:
+          def __init__(self):
         self.questions = {
             "easy": ["What color is the sky?", "What is 2 + 2?", "How many legs does a cat have?"],
             "medium": ["Who painted the Mona Lisa?", "What is the capital of France?", "What is the largest planet in our solar system?"],
@@ -18,7 +18,7 @@ class EducationalQuiz:
         self.questions_to_ask = []
         self.start_time = None
         self.end_time = None
-    def sample_test(self):
+        def sample_test(self):
         sample_questions = ["What is 1 + 1?", "What color is a banana?", "How many days are in a week?"]
         correct_answers = ["2", "yellow", "7"]
         correct_count = 0
@@ -81,7 +81,7 @@ class EducationalQuiz:
         while self.current_question < len(self.questions_to_ask):
             self.check_answer()
 
-if __name__ == "__main__":
+       if __name__ == "__main__":
     quiz = EducationalQuiz()
     quiz.run_quiz()
 
